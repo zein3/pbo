@@ -1,3 +1,8 @@
+/**
+ * Kelas merepresentasikan penulis.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Author {
     private String name;
     private String email;

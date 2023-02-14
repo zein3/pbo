@@ -1,8 +1,31 @@
+/**
+ * Kelas untuk merepresentasikan buku dan memiliki hubungan untuk menggambarkan penulis yang menulis buku.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Book {
     private String name;
     private Author[] authors;
     private double price;
     private int qty;
+
+    /**
+     * Mengembalikan array penulis sebagai string.
+     * @return {author[name=author1,...],...}
+     */
+    private String getAuthorsString() {
+        String result = "{";
+
+        for (int i = 0; i < authors.length; i++) {
+            result += authors[i].toString();
+            if (i != (authors.length - 1)) {
+                result += ",";
+            }
+        }
+
+        result += "}";
+        return result;
+    }
 
     public Book(String name, Author[] authors, double price) {
         this.name = name;
@@ -20,19 +43,26 @@ public class Book {
 		return name;
 	}
 
-	public String getAuthors() {
-        String result = "{";
+	public Author[] getAuthors() {
+        return authors;
+	}
+
+    /**
+     * Mengembalikan seluruh nama author.
+     * @return author1, author2, ...
+     */
+    public String getAuthorNames() {
+        String result = "";
 
         for (int i = 0; i < authors.length; i++) {
-            result += authors[i].toString();
+            result += authors[i].getName();
             if (i != (authors.length - 1)) {
-                result += ",";
+                result += ", ";
             }
         }
 
-        result += "}";
         return result;
-	}
+    }
 
 	public double getPrice() {
 		return price;
@@ -53,7 +83,7 @@ public class Book {
     public String toString() {
         return String.format("Book[name=%s,authors=%s,price=%.2f,qty=%d]",
             name,
-            getAuthors(),
+            getAuthorsString(),
             price,
             qty
         );

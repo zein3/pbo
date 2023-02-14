@@ -15,5 +15,6 @@ public class Main {
         Author[] authors = { nano, yeni };
         Book javaBook = new Book("Java for dummies", authors, 10000);
         System.out.println(javaBook);
+        System.out.println(javaBook.getAuthorNames());
     }
 }
