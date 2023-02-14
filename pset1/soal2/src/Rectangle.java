@@ -55,6 +55,7 @@ public class Rectangle extends Shape {
         return 2 * (width + length);
     }
 
+    @Override
     public String toString() {
         return String.format("Rectangle[%s,width=%.2f,length=%.2f]",
             super.toString(),

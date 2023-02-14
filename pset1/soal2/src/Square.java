@@ -25,14 +25,17 @@ public class Square extends Rectangle {
         super.setLength(side);
     }
 
+    @Override
     public void setWidth(double side) {
         this.setSide(side);
     }
 
+    @Override
     public void setLength(double side) {
         this.setSide(side);
     }
 
+    @Override
     public String toString() {
         return String.format("Square[%s]", super.toString());
     }

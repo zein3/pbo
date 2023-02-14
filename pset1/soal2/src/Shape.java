@@ -30,6 +30,7 @@ public class Shape {
         this.filled = filled;
     }
 
+    @Override
     public String toString() {
         return String.format("Shape[color=%s,filled=%s]",
             this.color,
