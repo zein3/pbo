@@ -3,16 +3,6 @@ public class Account {
     private String name;
     private int balance = 0;
 
-    public static void main(String[] args) {
-        Account a = new Account("a", "Mr. A");
-        Account b = new Account("b", "Mr. B", 500);
-
-        b.transferTo(a, 100);
-
-        System.out.println(a);
-        System.out.println(b);
-    }
-
     public Account(String id, String name) {
         this.id = id;
         this.name = name;

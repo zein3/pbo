@@ -7,20 +7,6 @@ public class Time {
         return (time < 10) ? ("0" + Integer.toString(time)) : Integer.toString(time);
     }
 
-    public static void main(String[] args) {
-        Time time = new Time(0, 0, 5);
-
-        do {
-            System.out.println(time);
-            time.previousSecond();
-            try {
-                Thread.sleep(1000);
-            } catch(InterruptedException ex) {
-                Thread.currentThread().interrupt();
-            }
-        } while(true);
-    }
-
     public Time(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;

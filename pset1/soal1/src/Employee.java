@@ -4,13 +4,6 @@ public class Employee {
     private String lastName;
     private int salary;
 
-    public static void main(String[] args) {
-        Employee a = new Employee(12, "Budi", "Santoso", 12000);
-        a.raiseSalary(5);
-        a.setSalary(1000);
-        System.out.println(a);
-    }
-
     public Employee(int id, String firstName, String lastName, int salary) {
         this.id = id;
         this.firstName = firstName;
