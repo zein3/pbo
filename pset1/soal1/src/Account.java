@@ -1,3 +1,8 @@
+/**
+ * Kelas untuk merepresentasikan akun bank.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Account {
     private String id;
     private String name;
@@ -25,11 +30,21 @@ public class Account {
         return this.balance;
     }
 
+    /**
+     * Menambahkan uang ke akun.
+     * @param amount jumlah uang untuk ditambah.
+     * @return jumlah uang baru.
+     */
     public int credit(int amount) {
         this.balance += amount;
         return this.balance;
     }
 
+    /**
+     * Mengambil uang dari akun.
+     * @param amount jumlah uang untuk diambil.
+     * @return jumlah uang baru.
+     */
     public int debit(int amount) {
         if (amount <= this.balance) {
             this.balance -= amount;
@@ -40,6 +55,12 @@ public class Account {
         return this.balance;
     }
 
+    /**
+     * Transfer uang ke akun lain.
+     * @param another akun penerima.
+     * @param amount jumlah uang untuk ditransfer.
+     * @return jumlah uang baru akun ini.
+     */
     public int transferTo(Account another, int amount) {
         if (amount <= balance) {
             this.debit(amount);

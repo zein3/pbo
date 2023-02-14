@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-javac src/*.java -d classes/
+javac ./src/*.java -d ./classes/

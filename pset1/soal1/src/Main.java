@@ -9,18 +9,15 @@ public class Main {
         // Tes Account
         Account a = new Account("a", "Mr. A");
         Account b = new Account("b", "Mr. B", 500);
-
         b.transferTo(a, 100);
-
         System.out.println(a);
         System.out.println(b);
 
         // Tes Time
-        Time time = new Time(0, 0, 5);
-
+        Time time = new Time(23, 59, 55);
         do {
             System.out.println(time);
-            time.previousSecond();
+            time.nextSecond();
             try {
                 Thread.sleep(1000);
             } catch(InterruptedException ex) {

@@ -1,3 +1,8 @@
+/**
+ * Kelas merepresentasikan pegawai dan mengandung nama serta gajinya.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Employee {
     private int id;
     private String firstName;
@@ -23,10 +28,18 @@ public class Employee {
         return this.lastName;
     }
 
+    /**
+     * Mengembalikan nama lengkap pegawai.
+     * @return nama lengkap.
+     */
     public String getName() {
         return (this.firstName + " " + this.lastName);
     }
 
+    /**
+     * Mengembalikan gaji per bulan.
+     * @return gaji per bulan.
+     */
     public int getSalary() {
         return this.salary;
     }
@@ -35,10 +48,19 @@ public class Employee {
         this.salary = salary;
     }
 
+    /**
+     * Mengembalikan gaji per tahun.
+     * @return salary in a year.
+     */
     public int getAnnualSalary() {
         return (12 * salary);
     }
 
+    /**
+     * Menaikkan gaji dengan persentase (gaji * (1 + percent)).
+     * @param percent
+     * @return gaji baru.
+     */
     public int raiseSalary(int percent) {
         this.salary = (int) Math.round(this.salary * (1.0f + (percent / 100.0f)));
         return this.salary;
