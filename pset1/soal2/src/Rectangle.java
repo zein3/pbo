@@ -1,3 +1,8 @@
+/**
+ * Kelas untuk merepresentasikan persegi panjang.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
@@ -34,10 +39,18 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
+    /**
+     * Mengembalikan luas dari persegi panjang.
+     * @return luas
+     */
     public double getArea() {
         return width * length;
     }
 
+    /**
+     * Mengembalikan keliling dari persegi panjang.
+     * @return keliling
+     */
     public double getPerimeter() {
         return 2 * (width + length);
     }

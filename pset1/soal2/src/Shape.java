@@ -1,3 +1,8 @@
+/**
+ * Kelas untuk menggambarkan sebuah wujud.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Shape {
     private String color = "red";
     private Boolean filled = true;

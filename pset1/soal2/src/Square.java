@@ -1,3 +1,8 @@
+/**
+ * Kelas untuk merepresentasikan persegi.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Square extends Rectangle {
     public Square() {
         super();

@@ -1,3 +1,8 @@
+/**
+ * Kelas untuk merepresentasikan lingkaran.
+ *
+ * @author  Ahmad Zein Haddad
+ */
 public class Circle extends Shape {
     private double radius = 1.0;
 
@@ -23,10 +28,18 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    /**
+     * Mengembalikan luas dari lingkaran.
+     * @return luas
+     */
     public double getArea() {
-        return Math.PI * (this.radius * this.radius);
+        return Math.PI * this.radius * this.radius;
     }
 
+    /**
+     * Mengembalikan keliling dari lingkaran.
+     * @return keliling
+     */
     public double getPerimeter() {
         return Math.PI * this.radius * 2;
     }
