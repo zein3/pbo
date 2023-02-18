@@ -8,9 +8,13 @@ package Modul2;
  *
  * @author zein
  */
-public class MahasiswaMain {
+public class MahasiswaMain2 {
     public static void main(String[] args) {
         Mahasiswa2 s1 = new Mahasiswa2();
+
+        s1.nim = 123456;
+        s1.nama = "Lutfi";
+
         System.out.println(s1.nim);
         System.out.println(s1.nama);
     }

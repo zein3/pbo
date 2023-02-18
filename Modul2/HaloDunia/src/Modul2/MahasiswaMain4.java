@@ -8,10 +8,15 @@ package Modul2;
  *
  * @author zein
  */
-public class MahasiswaMain {
+public class MahasiswaMain4 {
     public static void main(String[] args) {
-        Mahasiswa2 s1 = new Mahasiswa2();
-        System.out.println(s1.nim);
-        System.out.println(s1.nama);
+        Mahasiswa3 s1 = new Mahasiswa3();
+        Mahasiswa3 s2 = new Mahasiswa3();
+
+        s1.tambahData(123456, "Lutfi");
+        s2.tambahData(123457, "Rahma");
+
+        s1.tampilkanInfo();
+        s2.tampilkanInfo();
     }
 }
