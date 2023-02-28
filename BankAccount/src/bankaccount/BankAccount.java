@@ -110,14 +110,14 @@ class Bank {
      * @return nomorRekening dengan panjang 9 digit (String)
     */     
     public String generateNoRek() {
-        String noRek = "";
+        String noRek = this.kodeBank;
         Random rand = new Random();
+
         int len = 9 - this.kodeBank.length();
         for (int i = 0; i < len; i++) {
             noRek += Integer.toString(rand.nextInt(10));
         }
 
-        noRek += this.kodeBank;
         return noRek;
     }
 }
