@@ -1,5 +1,9 @@
 package pset44;
 
+/**
+ * Kelas circle yang mengimplementasi GeometricObject.
+ * @author Ahmad Zein Haddad
+ */
 public class Circle implements GeometricObject {
     protected double radius;
 
@@ -7,6 +11,7 @@ public class Circle implements GeometricObject {
         this.radius = radius;
     }
 
+    @Override
     public String toString() {
         return String.format("Circle[radius=%.2f]", this.radius);
     }

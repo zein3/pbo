@@ -11,5 +11,7 @@ public class GeometryTest {
         System.out.println(rCircle);
         rCircle.resize(50);
         System.out.println(rCircle);
+        rCircle.resize(300);
+        System.out.println(rCircle);
     }
 }

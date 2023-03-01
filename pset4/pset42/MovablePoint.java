@@ -1,5 +1,9 @@
 package pset42;
 
+/**
+ * Kelas Point yang mengimplementasi interface Movable.
+ * @author Ahmad Zein Haddad
+ */
 public class MovablePoint implements Movable {
     int x;
     int y;
@@ -13,6 +17,7 @@ public class MovablePoint implements Movable {
         this.ySpeed = ySpeed;
     }
 
+    @Override
     public String toString() {
         return String.format("(%d,%d),speed=(%d,%d)",
             this.x,
@@ -24,21 +29,21 @@ public class MovablePoint implements Movable {
 
     @Override
     public void moveUp() {
-
+        this.y += this.ySpeed;
     }
 
     @Override
     public void moveDown() {
-
+        this.y -= this.ySpeed;
     }
 
     @Override
     public void moveLeft() {
-
+        this.x -= this.xSpeed;
     }
 
     @Override
     public void moveRight() {
-
+        this.x += this.xSpeed;
     }
 }
