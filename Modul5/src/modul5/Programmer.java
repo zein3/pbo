@@ -14,7 +14,11 @@ public class Programmer extends Pegawai {
     private String bahasaPemrograman;
     private String platform;
 
-    public void setBahasaPemrograman(String bahasaPemrograman) {
+    public Programmer(String nama, Date tanggalLahir, String NIP) {
+        super(nama, tanggalLahir, NIP);
+    }
+
+    public void setBahasa(String bahasaPemrograman) {
         this.bahasaPemrograman = bahasaPemrograman;
     }
 
@@ -22,7 +26,7 @@ public class Programmer extends Pegawai {
         this.platform = platform;
     }
 
-    public String getBahasaPemrograman() {
+    public String getBahasa() {
         return bahasaPemrograman;
     }
 
@@ -30,8 +34,9 @@ public class Programmer extends Pegawai {
         return platform;
     }
 
-    public Programmer(String nama, Date tanggalLahir) {
-        super(nama, tanggalLahir);
+    @Override
+    public String getPekerjaan() {
+        return "Coding all along day";
     }
 
 }

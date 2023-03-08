@@ -17,8 +17,9 @@ public class Pegawai extends Orang implements Dosen {
     private String unitKerja;
     private String kelompokKeahlian;
 
-    public Pegawai(String nama, Date tanggalLahir) {
+    public Pegawai(String nama, Date tanggalLahir, String NIP) {
         super(nama, tanggalLahir);
+        this.NIP = NIP;
     }
 
     public void setNIP(String NIP) {
